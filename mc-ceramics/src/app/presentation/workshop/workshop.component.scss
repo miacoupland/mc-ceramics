@@ -11,20 +11,15 @@
       padding: 10px;
     }
   
-    .content {
-      display: flex;
-      justify-content: center;
-    }
-  
     p {
-      max-width: 45%;
       padding: 10px;
-      text-align: end;
+      text-align: justify;
     }
   
     figure {
       max-width: fit-content;
       margin: 10px;
+      float: right;
   
       img {
         max-height: 300px;

@@ -1,0 +1,38 @@
+.container {
+    margin: 0;
+    background-color: #d4ccb6;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+  
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .content {
+      display: flex;
+      justify-content: center;
+    }
+  
+    p {
+      max-width: 45%;
+      padding: 10px;
+      text-align: end;
+    }
+  
+    figure {
+      max-width: fit-content;
+      margin: 10px;
+  
+      img {
+        max-height: 300px;
+      }
+  
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+  

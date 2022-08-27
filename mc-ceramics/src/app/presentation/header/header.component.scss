@@ -4,7 +4,11 @@
 }
 
 .header {
-    background-image: url('../assets/house\ painting.jpg');
+    background-image: url('/assets/house\ painting.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #778818;
+    background-position: 50% 50%;
     margin: 0;
     height: 600px;
 }

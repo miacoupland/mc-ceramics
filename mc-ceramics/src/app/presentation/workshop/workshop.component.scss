@@ -13,7 +13,14 @@
     p {
       padding: 10px;
       text-align: justify;
+
+      .email-link {
+        text-decoration: underline;
+        color: #395101;
+      }
     }
+
+    //TODO make image go below text when over certain size
   
     figure {
       max-width: fit-content;
@@ -27,6 +34,14 @@
       figcaption {
         text-align: center;
       }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .content {
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
     }
   }
   

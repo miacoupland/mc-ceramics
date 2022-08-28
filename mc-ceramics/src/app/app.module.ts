@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './presentation/header/header.component';
@@ -9,6 +8,7 @@ import { WorkshopComponent } from './presentation/workshop/workshop.component';
 import { AboutComponent } from './presentation/about/about.component';
 import { GalleryComponent } from './presentation/gallery/gallery.component';
 import { FooterComponent } from './presentation/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { FooterComponent } from './presentation/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

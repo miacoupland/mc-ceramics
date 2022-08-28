@@ -12,7 +12,7 @@
   
     p {
       padding: 10px;
-      text-align: justify;
+      text-align: center;
 
       .email-link {
         text-decoration: underline;
@@ -26,7 +26,8 @@
       float: right;
   
       img {
-        max-height: 300px;
+        max-height: 100%;
+        max-width: 100%;
       }
   
       figcaption {

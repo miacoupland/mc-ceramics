@@ -8,21 +8,19 @@
   height: fit-content;
   display: flex;
   flex-flow: column;
-  padding: 20px;
 
   h2 {
     text-align: center;
     padding: 10px;
   }
 
-  .content {
-    display: flex;
-    justify-content: center;
-  }
-
   p {
     padding: 10px;
     text-align: center;
+  }
+
+  .gallery {
+    align-self: center;
   }
 
   // Carousel CSS
@@ -103,18 +101,12 @@
   }
 
   .carousel {
-    position: relative;
-    padding-top: 75%;
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
+    max-width: 1000px;
   }
 
   .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: flex;
     overflow-x: scroll;
     counter-reset: item;
@@ -138,7 +130,7 @@
   }
 
   .carousel__slide:before {
-    position: absolute;
+    // position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -40%, 70px);
@@ -173,10 +165,10 @@
   }
 
   .carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
     text-align: center;
   }
 

@@ -7,7 +7,7 @@
   background-color: #d4ccb6;
   height: fit-content;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
 
   h2 {
     text-align: center;
@@ -21,6 +21,8 @@
 
   .collection {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   div.gallery {

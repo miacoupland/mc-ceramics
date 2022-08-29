@@ -1,0 +1,46 @@
+.container {
+    margin: 0;
+    background-color: #d4ccb6;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+  
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    p {
+      padding: 10px;
+      text-align: center;
+
+      .email-link {
+        text-decoration: underline;
+        color: #395101;
+      }
+    }
+  
+    figure {
+      max-width: fit-content;
+      margin: 10px;
+      float: right;
+  
+      img {
+        max-height: 50%;
+        max-width: 50%;
+      }
+  
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .content {
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+  }
+  

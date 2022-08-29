@@ -1,0 +1,22 @@
+.container {
+  margin: 0;
+  background-color: #d4ccb6;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+
+  h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    padding: 10px;
+    text-align: center;
+  }
+}

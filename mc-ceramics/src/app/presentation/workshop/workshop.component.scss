@@ -20,14 +20,15 @@
       }
     }
   
-    figure {
+    .studio-images {
       max-width: fit-content;
       margin: 10px;
       float: right;
+      display: flex;
+      align-items: center;
   
       img {
         max-height: 50%;
-        max-width: 50%;
       }
   
       figcaption {

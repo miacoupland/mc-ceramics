@@ -21,6 +21,7 @@
   }
 
   .studio-images {
+    max-width: 50vmin;
     margin: 10px;
     float: right;
     display: flex;
@@ -40,6 +41,7 @@
   .content {
     display: flex;
     flex-flow: column-reverse wrap;
+    align-items: center;
   }
 
   .studio-images {

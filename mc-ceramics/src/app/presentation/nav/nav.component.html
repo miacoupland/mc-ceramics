@@ -1,10 +1,17 @@
 <div class="nav">
+  <div class="hamburger">
+    <button type="button" id="button" (click)="toggleHamburger()">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div id="links">
+      <a class="navlink" href="#about-section">About</a>
+      <a class="navlink" href="#gallery-section">Pottery Gallery</a>
+      <a class="navlink" href="#studio-section">Workshop Days</a>
+    </div>
+  </div>
   <a class="title-link" href=""
     ><h1 class="title">{{ title }}</h1></a
   >
-  <div class="links">
-    <a class="navlink" href="#about-section">About</a>
-    <a class="navlink" href="#gallery-section">Pottery Gallery</a>
-    <a class="navlink" href="#studio-section">Workshop Days</a>
-  </div>
 </div>

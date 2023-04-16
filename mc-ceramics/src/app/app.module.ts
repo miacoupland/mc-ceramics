@@ -9,6 +9,8 @@ import { AboutComponent } from './presentation/about/about.component';
 import { GalleryComponent } from './presentation/gallery/gallery.component';
 import { FooterComponent } from './presentation/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GalleryTileComponent } from './presentation/gallery/gallery-tile/gallery-tile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,14 +20,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     WorkshopComponent,
     AboutComponent,
     GalleryComponent,
-    FooterComponent
+    GalleryTileComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

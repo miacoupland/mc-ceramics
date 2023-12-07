@@ -1,0 +1,62 @@
+.container {
+  margin: 0;
+  background-color: #d4ccb6;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+
+  h2 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  p {
+    padding: 10px;
+    text-align: center;
+
+    .email-link {
+      text-decoration: underline;
+      color: #395101;
+    }
+  }
+
+  .studio-images {
+    max-width: 50vmin;
+    margin: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 30vmin;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
+
+  .studio-images {
+    float: none !important;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+    figure {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    img {
+      max-width: 80vmin;
+    }
+  }
+}

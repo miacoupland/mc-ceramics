@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: auto;
+  background-color: #d4ccb6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+p,
+figcaption,
+a {
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  padding: 50px;
+  max-width: 1000px;
+}

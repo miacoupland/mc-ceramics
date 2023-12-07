@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>My Work</h2>
+  <p>
+    Please see some examples of my work below. Click on the images to enlarge
+    them for a better look.
+  </p>
+  <!--Carousel HTML-->
+  <div class="collection">
+    <ng-container *ngFor="let item of galleryTileInfo">
+      <app-gallery-tile imageLink="{{ item.imageLink }}" description="{{ item.description }}"></app-gallery-tile>
+    </ng-container>
+  </div>
+</div>

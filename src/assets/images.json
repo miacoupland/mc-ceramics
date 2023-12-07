@@ -87,6 +87,18 @@
     {
       "imageLink": "exhibition.png",
       "description":"My table at the Oxcombe Exhibition"
+    },
+    {
+      "imageLink": "pens.jpg",
+      "description": "Hand turned pens of assorted wood"
+    },
+    {
+      "imageLink": "pens_holders.jpg",
+      "description": "Pen holders"
+    },
+    {
+      "imageLink": "trays.jpg",
+      "description": "Engraved leather catch-alls"
     }
   ]
 }

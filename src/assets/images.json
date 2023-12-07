@@ -54,11 +54,11 @@
     },
     {
       "imageLink": "IMG_6464.jpg",
-      "description": "Circular vases (blue) with base"
+      "description": "Circular vases (blue)"
     },
     {
       "imageLink": "IMG_6465.jpg",
-      "description": "Circular vases (green) with base"
+      "description": "Circular vases (green)"
     },
     {
       "imageLink": "IMG_6466.jpg",
@@ -87,18 +87,6 @@
     {
       "imageLink": "exhibition.png",
       "description":"My table at the Oxcombe Exhibition"
-    },
-    {
-      "imageLink": "pens.jpg",
-      "description": "Hand turned pens of assorted wood"
-    },
-    {
-      "imageLink": "pens_holders.jpg",
-      "description": "Pen holders"
-    },
-    {
-      "imageLink": "trays.jpg",
-      "description": "Engraved leather catch-alls"
     }
   ]
 }

@@ -16,17 +16,17 @@ import { HeaderComponent } from './presentation/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    WorkshopComponent,
-    AboutComponent,
     GalleryComponent,
     GalleryTileComponent,
     FooterComponent,
   ],
   imports: [
+    AboutComponent,
     AppRoutingModule,
     BrowserModule,
     CommonModule,
     HeaderComponent,
+    WorkshopComponent,
   ],
   providers: [
     provideAnimationsAsync(),

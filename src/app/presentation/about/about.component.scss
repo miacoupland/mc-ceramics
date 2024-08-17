@@ -1,26 +1,8 @@
-.container {
-  margin: 0;
-  background-color: #d4ccb6;
-  height: fit-content;
-  display: flex;
-  flex-flow: column;
+mat-card {
+  margin: 5rem 0;
+  padding: 0.5rem;
+}
 
-  h2 {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .content {
-    display: flex;
-    justify-content: center;
-  }
-
-  p {
-    padding: 10px;
-    text-align: center;
-
-    a {
-      color: #000;
-    }
-  }
+p {
+  margin: 1rem 0;
 }

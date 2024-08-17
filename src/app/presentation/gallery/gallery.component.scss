@@ -1,27 +1,8 @@
-* {
-  box-sizing: border-box;
+mat-card {
+  margin: 5rem 0;
+  padding: 0.5rem;
 }
 
-.container {
-  margin: 0;
-  background-color: #d4ccb6;
-  height: fit-content;
-  display: flex;
-  flex-flow: column wrap;
-
-  h2 {
-    text-align: center;
-    padding: 10px;
-  }
-
-  p {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .collection {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
+p {
+  margin: 1rem 0;
 }

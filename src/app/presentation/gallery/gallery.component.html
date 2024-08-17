@@ -1,13 +1,21 @@
-<div class="container">
-  <h2>My Work</h2>
-  <p>
-    Please see some examples of my work below. Click on the images to enlarge
-    them for a better look.
-  </p>
-  <!--Carousel HTML-->
-  <div class="collection">
-    <ng-container *ngFor="let item of galleryTileInfo">
-      <app-gallery-tile imageLink="{{ item.imageLink }}" description="{{ item.description }}"></app-gallery-tile>
-    </ng-container>
-  </div>
-</div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>My Work</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Please see some examples of my work below. Click on the images to enlarge
+      them for a better look.
+    </p>
+    <mat-grid-list cols="4">
+      @for (tile of galleryTileInfo; track tile) {
+      <mat-grid-tile [colspan]="1" [rowspan]="1" (click)="openDialog(tile)">
+        <app-gallery-tile (click)="openDialog(tile)"
+          imageLink="{{ tile.imageLink }}"
+          description="{{ tile.description }}"
+        ></app-gallery-tile>
+      </mat-grid-tile>
+      }
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

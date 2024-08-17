@@ -2,3 +2,8 @@
   <img src="./assets/{{ imageLink }}" alt="{{ description }}" />
   <div class="desc">{{ description }}</div>
 </mat-dialog-content>
+@if (data !== null) {
+  <mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Close</button>
+  </mat-dialog-actions>
+}

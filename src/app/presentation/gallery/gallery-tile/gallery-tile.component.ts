@@ -6,13 +6,14 @@ import {
   OnInit,
   Optional,
 } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { IGalleryTileInfo } from 'src/app/domain/entities/IGalleryTileInfo';
 
 @Component({
   selector: 'app-gallery-tile',
   standalone: true,
-  imports: [MatDialogModule],
+  imports: [MatButtonModule, MatDialogModule],
   templateUrl: './gallery-tile.component.html',
   styleUrls: ['./gallery-tile.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -23,9 +24,7 @@ export class GalleryTileComponent implements OnInit {
   @Input()
   public description!: string;
 
-  constructor(
-    @Optional() @Inject(MAT_DIALOG_DATA) private data: IGalleryTileInfo
-  ) {}
+  constructor(@Optional() @Inject(MAT_DIALOG_DATA) public data: IGalleryTileInfo) {}
 
   public ngOnInit(): void {
     if (this.data !== null) {

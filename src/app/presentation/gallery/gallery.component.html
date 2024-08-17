@@ -7,10 +7,10 @@
       Please see some examples of my work below. Click on the images to enlarge
       them for a better look.
     </p>
-    <mat-grid-list cols="4">
+    <mat-grid-list cols="4" rowHeight="350px">
       @for (tile of galleryTileInfo; track tile) {
       <mat-grid-tile [colspan]="1" [rowspan]="1" (click)="openDialog(tile)">
-        <app-gallery-tile (click)="openDialog(tile)"
+        <app-gallery-tile
           imageLink="{{ tile.imageLink }}"
           description="{{ tile.description }}"
         ></app-gallery-tile>

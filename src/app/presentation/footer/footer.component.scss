@@ -1,4 +1,6 @@
 .footer {
+  position: sticky;
+  top: 100vh;
   background-color: #395101;
   color: white;
   display: flex;
@@ -29,5 +31,10 @@
     font-size: 14px;
     text-align: center;
     margin: 20px;
+
+    a {
+      display: block;
+      text-align: center;
+    }
   }
 }

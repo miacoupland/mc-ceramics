@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { faEtsy } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-footer',
+  standalone: true,
+  imports: [MatIconModule],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
-  public faEtsy = faEtsy;
-  public faEnvelope = faEnvelope;
-
+export class FooterComponent {
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

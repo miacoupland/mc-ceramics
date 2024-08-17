@@ -1,10 +1,18 @@
-*, html, body {
-    margin: 0;
-    padding: 0;
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .app-content {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+
+@media only screen and (max-width: 900px) {
+  .app-content {
+    margin: 0 1rem;
+  }
 }

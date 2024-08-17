@@ -1,4 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@use "@angular/material" as mat;
+@include mat.core();
+
+$mc-ceramics-theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$green-palette,
+      tertiary: mat.$spring-green-palette,
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+:root {
+  @include mat.all-component-themes($mc-ceramics-theme);
+}
 
 * {
   margin: 0;
@@ -8,22 +26,10 @@
 html,
 body {
   overflow: auto;
-  background-color: #d4ccb6;
+  height: 100%;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Merriweather", serif;
-}
-
-p,
-figcaption,
-a {
-  font-family: Calibri, "Trebuchet MS", sans-serif;
-}
-
-.container {
-  padding: 50px;
-  max-width: 1000px;
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

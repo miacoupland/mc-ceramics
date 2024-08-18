@@ -22,8 +22,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent {
-  private _galleryAssets: string = 'assets/images.json';
   public galleryTileInfo: IGalleryTileInfo[] = [];
+  public breakpoint: number = 4;
+  private _galleryAssets: string = 'assets/images.json';
 
   constructor(private http: HttpClient, private dialog: MatDialog) {
     this.getJSON().subscribe((data) => {
@@ -31,6 +32,8 @@ export class GalleryComponent {
         this.galleryTileInfo.push(element);
       });
     });
+
+    this.setColumnWidth();
   }
 
   public openDialog(element: IGalleryTileInfo): void {
@@ -39,6 +42,10 @@ export class GalleryComponent {
       enterAnimationDuration: '300ms',
       exitAnimationDuration: '300ms',
     });
+  }
+
+  public setColumnWidth(): void {
+    this.breakpoint = window.innerWidth <= 700 ? 1 : 4;
   }
 
   private getJSON(): Observable<any> {

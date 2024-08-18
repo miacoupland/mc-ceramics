@@ -7,7 +7,7 @@
       Please see some examples of my work below. Click on the images to enlarge
       them for a better look.
     </p>
-    <mat-grid-list cols="4" rowHeight="350px">
+    <mat-grid-list [cols]="breakpoint" rowHeight="350px" (window:resize)="setColumnWidth()">
       @for (tile of galleryTileInfo; track tile) {
       <mat-grid-tile [colspan]="1" [rowspan]="1" (click)="openDialog(tile)">
         <app-gallery-tile

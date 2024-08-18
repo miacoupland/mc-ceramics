@@ -3,15 +3,10 @@ mat-card {
   padding: 0.5rem;
 }
 
-app-gallery-tile {
-  margin: 0.5rem;
-  border-radius: 5%;
-
-  img {
-    max-height: 80%;
-  }
-}
-
 p {
   margin: 1rem 0;
+}
+
+.mat-grid-tile {
+  overflow: visible;
 }

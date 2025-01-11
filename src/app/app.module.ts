@@ -12,11 +12,9 @@ import { HeaderComponent } from './presentation/header/header.component';
 import { FooterComponent } from './presentation/footer/footer.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
   imports: [
     AboutComponent,
+    AppComponent,
     AppRoutingModule,
     BrowserModule,
     CommonModule,
@@ -25,10 +23,7 @@ import { FooterComponent } from './presentation/footer/footer.component';
     HeaderComponent,
     WorkshopComponent,
   ],
-  providers: [
-    provideAnimationsAsync(),
-    provideHttpClient(),
-  ],
+  providers: [provideAnimationsAsync(), provideHttpClient()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

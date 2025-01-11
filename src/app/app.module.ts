@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WorkshopComponent } from './presentation/workshop/workshop.component';
@@ -23,7 +23,7 @@ import { FooterComponent } from './presentation/footer/footer.component';
     HeaderComponent,
     WorkshopComponent,
   ],
-  providers: [provideAnimationsAsync(), provideHttpClient()],
+  providers: [provideAnimationsAsync(), provideHttpClient(), provideClientHydration(withEventReplay())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

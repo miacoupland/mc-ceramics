@@ -33,3 +33,9 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.mat-mdc-card,
+.mat-toolbar,
+.mat-mdc-menu-panel {
+  background-color: white !important;
+}
